@@ -100,7 +100,7 @@ def main():
 
     if excel_file and zip_file and month and year and sender_email and password:
         if st.button("🚀 Send Emails"):
-            subject = f"MAINTENANCE BILL & SUPPLEMENTARY BILL FOR THE MONTH OF {month} {year}"
+            subject = f"MAINTENANCE BILL FOR THE MONTH OF {month} {year}"
             df = load_excel(excel_file)
             pdf_files = extract_pdfs_from_zip(zip_file)
 
